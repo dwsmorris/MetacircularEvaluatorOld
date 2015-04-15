@@ -12,8 +12,8 @@ requirejs.config({
 	baseUrl: '/base',
 
 	paths: {
-		'jquery': 'lib/jquery',
-		'underscore': 'lib/underscore',
+		'jquery': 'node_modules/jquery/dist/jquery',
+		'underscore': 'node_modules/underscore/underscore',
 		"app": "src/app"
 	},
 

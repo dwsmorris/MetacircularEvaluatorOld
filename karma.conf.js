@@ -14,8 +14,11 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-        {pattern: 'lib/**/*.js', included: false},
-        {pattern: 'src/**/*.js', included: false},
+		"node_modules/requirejs/require.js",
+		"node_modules/jquery/dist/jquery.js",
+		"node_modules/underscore/underscore.js",
+
+        { pattern: 'src/**/*.js', included: false },
         {pattern: 'test/**/*Spec.js', included: false},
 
         'test-main.js',

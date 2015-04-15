@@ -6,5 +6,10 @@
 		"karma-jasmine": "*",
 		"karma-requirejs": "*",
 		"karma-firefox-launcher": "*"
+	},
+	"dependencies": {
+		"requirejs": "*",
+		"underscore": "*",
+		"jquery": "*"
 	}
 }
