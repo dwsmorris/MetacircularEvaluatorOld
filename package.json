@@ -1,0 +1,8 @@
+{
+	"name": "metacircular-evaluator",
+	"version": "0.0.1",
+	"devDependencies": {
+		"karma": "*",
+		"karma-jasmine": "*"
+	}
+}
