@@ -9,11 +9,12 @@ for (var file in window.__karma__.files) {
 
 requirejs.config({
 	// Karma serves files from '/base'
-	baseUrl: '/base/src',
+	baseUrl: '/base',
 
 	paths: {
-		'jquery': '../lib/jquery',
-		'underscore': '../lib/underscore',
+		'jquery': 'lib/jquery',
+		'underscore': 'lib/underscore',
+		"app": "src/app"
 	},
 
 	shim: {

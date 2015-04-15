@@ -18,13 +18,12 @@ module.exports = function(config) {
         {pattern: 'src/**/*.js', included: false},
         {pattern: 'test/**/*Spec.js', included: false},
 
-        'test/test-main.js',
+        'test-main.js',
     ],
 
 
     // list of files to exclude
     exclude: [
-        'src/main.js'
     ],
 
 
@@ -67,6 +66,6 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, it capture browsers, run tests and exit
-    singleRun: false
+    singleRun: true
   });
 };
