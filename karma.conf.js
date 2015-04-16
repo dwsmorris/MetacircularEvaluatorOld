@@ -15,11 +15,10 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
 		"node_modules/requirejs/require.js",
-		"node_modules/jquery/dist/jquery.js",
 		"node_modules/underscore/underscore.js",
 
         { pattern: 'js/**/*.js', included: false },
-        {pattern: 'test/**/*.js', included: false},
+		{ pattern: 'test/**/*.js', included: false },
 
         'test-main.js',
     ],

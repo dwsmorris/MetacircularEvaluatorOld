@@ -9,7 +9,6 @@
 	},
 	"dependencies": {
 		"requirejs": "*",
-		"underscore": "*",
-		"jquery": "*"
+		"underscore": "*"
 	}
 }
