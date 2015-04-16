@@ -18,7 +18,7 @@ module.exports = function(config) {
 		"node_modules/jquery/dist/jquery.js",
 		"node_modules/underscore/underscore.js",
 
-        { pattern: 'src/**/*.js', included: false },
+        { pattern: 'js/**/*.js', included: false },
         {pattern: 'test/**/*.js', included: false},
 
         'test-main.js',
