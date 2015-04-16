@@ -1,7 +1,8 @@
 requirejs.config({
     paths: {
     	'underscore': 'node_modules/underscore/underscore',
-		convert: "js/convert"
+    	convert: "js/convert",
+		getPolygonInternalAngle: "js/getPolygonInternalAngle"
     },
 
     shim: {
@@ -12,9 +13,9 @@ requirejs.config({
 });
 
 define([
-	"convert"
+	"getPolygonInternalAngle"
 ], function (
-	convert
+	getPolygonInternalAngle
 ) {
-	alert(convert.degreesToRadians(180));
+	alert(getPolygonInternalAngle(4));
 });

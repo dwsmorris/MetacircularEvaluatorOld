@@ -19,8 +19,9 @@ requirejs.config({
 
 	paths: {
 		'underscore': 'node_modules/underscore/underscore',
-		convert: "js/convert"
-	},
+		convert: "js/convert",
+		getPolygonInternalAngle: "js/getPolygonInternalAngle"
+},
 
 	shim: {
 		'underscore': {
