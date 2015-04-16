@@ -20,7 +20,8 @@ requirejs.config({
 	paths: {
 		'jquery': 'node_modules/jquery/dist/jquery',
 		'underscore': 'node_modules/underscore/underscore',
-		"app": "js/app"
+		"app": "js/app",
+		convert: "js/convert"
 	},
 
 	shim: {
