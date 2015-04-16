@@ -20,7 +20,7 @@ requirejs.config({
 	paths: {
 		'underscore': 'node_modules/underscore/underscore',
 		convert: "js/convert",
-		getPolygonInternalAngle: "js/getPolygonInternalAngle"
+		getPolygonInternalAngle: "js/get-polygon-internal-angle"
 },
 
 	shim: {
