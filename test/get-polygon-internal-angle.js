@@ -1,4 +1,4 @@
-﻿/*globals define*/
+﻿/*globals define, describe, it, expect*/
 
 define([
 	"getPolygonInternalAngle"

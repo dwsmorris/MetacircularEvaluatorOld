@@ -1,4 +1,4 @@
-﻿/*globals define, describe*/
+﻿/*globals define, describe, it, expect*/
 
 define([
 	"convert"
