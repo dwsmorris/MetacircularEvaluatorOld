@@ -9,22 +9,31 @@ define([
     describe("getStub", function() {
         it("returns an overriden defined property", function () {
             var stub = getStub();
-            stub.a = 1;
+            stub.property = 1;
 
-            expect(stub.a).toEqual(1);
+            expect(stub.property).toEqual(1);
         });
 
         it("returns an overriden property set to undefined", function () {
             var stub = getStub();
-            stub.a = undefined;
+            stub.property = undefined;
 
-            expect(stub.a).not.toBeDefined();
+            expect(stub.property).not.toBeDefined();
         });
 
         it("returns an object (stub) when an undefined property is called on it", function() {
             var stub = getStub();
 
-            expect(typeof stub.a).toEqual("object");
+            expect(typeof stub.property).toEqual("object");
+        });
+
+        it("returns an overridden defined method", function() {
+            var stub = getStub();
+            stub.method = function() {
+                return 1;
+            };
+
+            expect(stub.method()).toEqual(1);
         });
     });
 
