@@ -35,6 +35,12 @@ define([
 
             expect(stub.method()).toEqual(1);
         });
+
+        it("returns a stub when invoked", function() {
+            var stub = getStub();
+
+            expect(typeof stub()).toEqual("object");
+        });
     });
 
 });
