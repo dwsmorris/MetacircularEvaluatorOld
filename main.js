@@ -25,4 +25,7 @@ define([
     console.log(stub.a);
     console.log(stub.b);
     console.log(stub.c);
+
+    var c = stub();
+    var i = 0;
 });
