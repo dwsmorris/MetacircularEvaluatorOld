@@ -25,10 +25,8 @@ define([
         	expect(newStub.property).toEqual(undefined);
         });
 		
-        it("returns an object (stub) when an undefined property is called on it", function() {
-        	var newStub = stub();
-
-        	expect(typeof newStub.property).toEqual("function");
+        it("returns a stub when an undefined property is called on it", function() {
+        	expect(typeof stub().property).toEqual("function");
         });
 
         it("returns an overridden defined method", function() {
@@ -38,6 +36,10 @@ define([
             };
 
         	expect(newStub.method()).toEqual(1);
+        });
+
+        it("returns a stub when an array accessor is called on it", function () {
+        	expect(typeof stub()[0]).toEqual("function");
         });
     });
 
