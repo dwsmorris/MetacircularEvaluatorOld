@@ -33,6 +33,9 @@ module.exports = function(config) {
     // possible values: 'dots', 'progress', 'junit', 'growl', 'coverage'
     reporters: ['progress'],
 
+    client: {
+    	requireJsShowNoTimestampsError: false
+    },
 
     // web server port
     port: 9876,
