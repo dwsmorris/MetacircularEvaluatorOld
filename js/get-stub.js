@@ -2,17 +2,17 @@
 
 define(function () {
 
-    var getStub = function(substitute) {
-        return new Proxy({}, {
-            get: function(target, name) {
-                return name in target ? target[name] : getStub();
-            },
-            apply: function(target, thisArg, argumentsList) {
-                return getStub();
-            }
-        });
+    return function getStub() {
+    	return Proxy.createFunction({ // properties
+    		get: function (target, name) {
+    			// return name in target ? target[name] : getStub();
+    			return getStub();
+    		},
+    		set: function (target, name, value) {
+    		}
+    	}, function () { // invocation
+    		return getStub();
+    	});
     };
-
-    return getStub;
 
 });

@@ -18,14 +18,10 @@ define([
 ], function (
 	getStub
 ) {
-    var stub = getStub();
-    stub.a = 1;
-    stub.b = undefined;
 
-    console.log(stub.a);
-    console.log(stub.b);
-    console.log(stub.c);
+	var stub = getStub();
+	var t = typeof stub;
+	stub.i = 1;
+	var i = 0;
 
-    var c = stub();
-    var i = 0;
 });

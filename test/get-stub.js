@@ -13,18 +13,18 @@ define([
 
             expect(stub.property).toEqual(1);
         });
-
+		
         it("returns an overriden property set to undefined", function () {
             var stub = getStub();
             stub.property = undefined;
 
-            expect(stub.property).not.toBeDefined();
+            expect(stub.property).toEqual(undefined);
         });
-
+		
         it("returns an object (stub) when an undefined property is called on it", function() {
             var stub = getStub();
 
-            expect(typeof stub.property).toEqual("object");
+            expect(typeof stub.property).toEqual("function");
         });
 
         it("returns an overridden defined method", function() {
@@ -39,7 +39,7 @@ define([
         it("returns a stub when invoked", function() {
             var stub = getStub();
 
-            expect(typeof stub()).toEqual("object");
+            expect(typeof stub()).toEqual("function");
         });
     });
 
