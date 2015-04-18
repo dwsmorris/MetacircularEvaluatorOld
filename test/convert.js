@@ -1,7 +1,7 @@
 ﻿/*globals define, describe, it, expect*/
 
 define([
-	"convert"
+	"../js/convert"
 ], function(
 	convert
 ) {
