@@ -7,7 +7,13 @@ define([
 ) {
 
     describe("getStub", function() {
-        it("returns an overriden defined property", function () {
+    	it("returns a stub when invoked", function () {
+    		var stub = getStub();
+
+    		expect(typeof stub()).toEqual("function");
+    	});
+
+    	it("returns an overriden defined property", function () {
             var stub = getStub();
             stub.property = 1;
 
@@ -34,12 +40,6 @@ define([
             };
 
             expect(stub.method()).toEqual(1);
-        });
-
-        it("returns a stub when invoked", function() {
-            var stub = getStub();
-
-            expect(typeof stub()).toEqual("function");
         });
     });
 
