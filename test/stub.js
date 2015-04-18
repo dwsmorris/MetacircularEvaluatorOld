@@ -1,7 +1,7 @@
 ﻿/*globals define, describe, it, expect*/
 
 define([
-    "stub"
+    "../js/stub"
 ], function (
     stub
 ) {

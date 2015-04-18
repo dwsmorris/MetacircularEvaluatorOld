@@ -1,7 +1,7 @@
 ﻿/*globals define, describe, it, expect*/
 
 define([
-	"getPolygonInternalAngle"
+	"../js/get-polygon-internal-angle"
 ], function (
 	getPolygonInternalAngle
 ) {
