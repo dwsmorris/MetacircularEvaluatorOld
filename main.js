@@ -3,7 +3,7 @@ requirejs.config({
     	'underscore': 'node_modules/underscore/underscore',
     	convert: "js/convert",
     	getPolygonInternalAngle: "js/get-polygon-internal-angle",
-        getStub: "js/get-stub"
+        stub: "js/stub"
     },
 
     shim: {
@@ -14,14 +14,12 @@ requirejs.config({
 });
 
 define([
-	"getStub"
+	"stub",
+	"getPolygonInternalAngle"
 ], function (
-	getStub
+	stub,
+	getPolygonInternalAngle
 ) {
 
-	var stub = getStub();
-	var t = typeof stub;
-	stub.i = 1;
-	var i = 0;
-
+	alert(getPolygonInternalAngle(4));
 });
