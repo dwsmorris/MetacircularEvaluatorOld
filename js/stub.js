@@ -2,7 +2,7 @@
 
 define(function () {
 
-    return function getStub() {
+    var getStub = function() {
     	return Proxy.createFunction({ // properties
     		get: function (target, name) {
     			// return name in target ? target[name] : getStub();
@@ -14,5 +14,7 @@ define(function () {
     		return getStub();
     	});
     };
+
+    return getStub();
 
 });
