@@ -2,10 +2,13 @@ requirejs.config({
     paths: {
     	'underscore': 'node_modules/underscore/underscore',
     	logger: "js/logger",
-    	moduleConsumer: "js/module-consumer",
-        stub: "js/stub"
+    	moduleConsumer: "js/module-consumer"
     },
-
+    map: {
+    	"*": {
+			stub: "js/stub"
+    	}
+    },
     shim: {
         'underscore': {
             exports: '_'
@@ -14,9 +17,12 @@ requirejs.config({
 });
 
 define([
-	"stub"
+	"stub",
+	"logger"
 ], function (
-	stub
+	stub,
+	logger
 ) {
-
+	var o = stub();
+	var i = 90;
 });

@@ -24,7 +24,8 @@ requirejs.config({
 	map: {
 		"*": {
 			logger: "js/stub",
-			moduleConsumer: "js/stub"
+			moduleConsumer: "js/stub",
+			stub: "js/stub"
 		}
     },
 
