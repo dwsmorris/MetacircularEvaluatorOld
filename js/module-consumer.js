@@ -1,16 +1,13 @@
 ﻿/*globals define*/
 
 define([
-	"convert"
+	"logger"
 ], function (
-	convert
+	logger
 ) {
 
-	return function (noOfSides) {
-		var degrees = 180 - 360 / noOfSides;
-		var radians = convert.degreesToRadians(degrees);
-
-		return radians;
+	return function () {
+		logger.log("entered module consumer");
 	};
 
 });

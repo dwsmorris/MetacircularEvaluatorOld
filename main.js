@@ -1,8 +1,8 @@
 requirejs.config({
     paths: {
     	'underscore': 'node_modules/underscore/underscore',
-    	convert: "js/convert",
-    	getPolygonInternalAngle: "js/get-polygon-internal-angle",
+    	logger: "js/logger",
+    	moduleConsumer: "js/module-consumer",
         stub: "js/stub"
     },
 
@@ -14,12 +14,9 @@ requirejs.config({
 });
 
 define([
-	"stub",
-	"getPolygonInternalAngle"
+	"stub"
 ], function (
-	stub,
-	getPolygonInternalAngle
+	stub
 ) {
 
-	alert(getPolygonInternalAngle(4));
 });
