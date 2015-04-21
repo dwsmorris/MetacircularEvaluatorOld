@@ -5,7 +5,8 @@
 		"karma": "*",
 		"karma-jasmine": "*",
 		"karma-requirejs": "*",
-		"karma-firefox-launcher": "*"
+		"karma-firefox-launcher": "*",
+		"squirejs": "*"
 	},
 	"dependencies": {
 		"requirejs": "*",

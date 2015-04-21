@@ -18,7 +18,8 @@ requirejs.config({
 	baseUrl: '/base',
 
 	paths: {
-		'underscore': 'node_modules/underscore/underscore',
+	    'underscore': 'node_modules/underscore/underscore',
+        "squire": "node_modules/squirejs/src/Squire"
 	},
 
 	map: {
@@ -32,7 +33,10 @@ requirejs.config({
 	shim: {
 		'underscore': {
 			exports: '_'
-		}
+		},
+        "squire": {
+            exports: "squire"
+        }
 	},
 
 	// ask Require.js to load these files (all our tests)

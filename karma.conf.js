@@ -16,6 +16,7 @@ module.exports = function(config) {
     files: [
 		"node_modules/requirejs/require.js",
 		"node_modules/underscore/underscore.js",
+        "node_modules/squirejs/src/Squire.js",
 
         { pattern: 'js/**/*.js', included: false },
 		{ pattern: 'spec/**/*.js', included: false },
