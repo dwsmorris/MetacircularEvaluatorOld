@@ -1,5 +1,6 @@
 ﻿/*globals define, describe, it, expect*/
 
+
 define([
 	"../js/module-consumer",
 	"stub"
@@ -9,8 +10,9 @@ define([
 ) {
 
 	describe("moduleConsumer", function () {
-		it("calls logger.log with 'entered module consumer'", function () {
-			//expect(stub.log).toHaveBeenCalled();
-		});
+	    it("calls logger.log with 'entered module consumer'", function () {
+	        //moduleConsumer();
+	        //expect(stub.log).toHaveBeenCalled();
+	    });
 	});
 });
