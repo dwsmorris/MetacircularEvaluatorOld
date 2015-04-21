@@ -18,7 +18,7 @@ module.exports = function(config) {
 		"node_modules/underscore/underscore.js",
 
         { pattern: 'js/**/*.js', included: false },
-		{ pattern: 'test/**/*.js', included: false },
+		{ pattern: 'spec/**/*.js', included: false },
 
         'test-main.js',
     ],
