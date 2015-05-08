@@ -7,21 +7,23 @@ define([
 	stub
 ) {
 
-	describe("moduleConsumer", function () {
-	    it("calls logger.log with 'entered module consumer'", function () {
-	        var logger = {
-	            log: function() {}
-	        };
+    describe("moduleConsumer", function () {
+        var logger = {
+            log: function () { }
+        };
 
-	        new Squire().mock("logger", logger).require(["module-consumer"], function(moduleConsumer) {
-	            moduleConsumer();
-
-	            expect(logger.log).not.toHaveBeenCalled();
-	            expect(1).toBe(2);
-	        });
-            
-	        //moduleConsumer();
-	        //expect(stub.log).toHaveBeenCalled();
+        beforeEach(function(done) {
+            var builder = new Squire().mock("logger", logger);
+            var done = false;
+            spyOn(logger, "log");
+            builder.require(["module-consumer"], function (moduleConsumer) {
+                moduleConsumer();
+                done = true;
+            });
+        });
+        
+        it("calls logger.log with 'entered module consumer'", function () {
+	            expect(logger.log).toHaveBeenCalled();
 	    });
 	});
 });

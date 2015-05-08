@@ -19,7 +19,7 @@ requirejs.config({
 
 	paths: {
 	    'underscore': 'node_modules/underscore/underscore',
-        "squire": "node_modules/squirejs/src/Squire"
+	    "squire": "node_modules/squirejs/src/Squire"
 	},
 
 	map: {
