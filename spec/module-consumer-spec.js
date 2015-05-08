@@ -2,28 +2,27 @@
 
 
 define([
-	"stub"
+    "test"
 ], function (
-	stub
+    testr
 ) {
 
     describe("moduleConsumer", function () {
-        var logger = {
-            log: function () { }
-        };
-
-        beforeEach(function(done) {
-            var builder = new Squire().mock("logger", logger);
-            var done = false;
-            spyOn(logger, "log");
-            builder.require(["module-consumer"], function (moduleConsumer) {
-                moduleConsumer();
-                done = true;
-            });
-        });
-        
         it("calls logger.log with 'entered module consumer'", function () {
-	            expect(logger.log).toHaveBeenCalled();
+            var logger = {
+                log: function () { }
+            };
+            spyOn(logger, "log");
+
+/*
+            var testModuleConsumer = testr("../js/module-consumer", {
+                "logger": logger
+            });
+
+            testModuleConsumer();
+
+             expect(logger.log).toHaveBeenCalled();
+             */
 	    });
 	});
 });

@@ -19,7 +19,8 @@ requirejs.config({
 
 	paths: {
 	    'underscore': 'node_modules/underscore/underscore',
-	    "squire": "node_modules/squirejs/src/Squire"
+	    "squire": "node_modules/squirejs/src/Squire",
+        "test": "third-party/testr"
 	},
 
 	map: {
@@ -34,9 +35,9 @@ requirejs.config({
 		'underscore': {
 			exports: '_'
 		},
-        "squire": {
-            exports: "squire"
-        }
+		"squire": {
+		    exports: "squire"
+		}
 	},
 
 	// ask Require.js to load these files (all our tests)
